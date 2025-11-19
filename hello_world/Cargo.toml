@@ -1,0 +1,16 @@
+[package]
+edition = "2024"
+name = "macro-learn"
+version = "0.1.0"
+
+[dependencies.hello]
+path = "./hello"
+
+[dependencies.hello_derive]
+path = "./hello_derive"
+
+[workspace]
+members = [
+    "hello", "original_macro",
+    "ratatui-original-macro",
+]
