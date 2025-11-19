@@ -3,4 +3,10 @@ name = "macro-learn"
 version = "0.1.0"
 edition = "2024"
 
+[workspace]
+members = [
+	"hello"
+]
 [dependencies]
+hello ={ path = "./hello" }
+hello_derive = { path = "./hello_derive" }
